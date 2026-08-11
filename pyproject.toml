@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "score-predictor-app"
+version = "1.0.0"
+description = "Predicts Students score"
+requires-python = ">=3.8"
+authors = [
+    {name = "Raushan", email = "raushan@example.com"},
+]
+readme = "README.md"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
